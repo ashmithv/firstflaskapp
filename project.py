@@ -22,7 +22,7 @@ def login():
             return response
 
     else:
-        response=make_response(render_template('sign.html' , cookie = str(request.cookies.get('tour') )))
+        response=make_response(render_template('welcome.html' , cookie = str(request.cookies.get('tour') )))
         return response
        
     return render_template('sign.html')
